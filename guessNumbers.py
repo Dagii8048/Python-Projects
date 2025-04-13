@@ -16,3 +16,5 @@ def guess(x):
 				break
 		except ValueError:
 			print("Sorry, invalid input. Please enter an integer.")
+user_input = int(input("Enter the range of numbers to guess from: "))
+guess(user_input)
