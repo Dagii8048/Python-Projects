@@ -1,7 +1,7 @@
 import random
 
 def guess(x):
-	random_number = random.randint(1,20)
+	random_number = random.randint(1,x)
 	attempts = 0
 	while True:
 		try:
@@ -16,5 +16,5 @@ def guess(x):
 				break
 		except ValueError:
 			print("Sorry, invalid input. Please enter an integer.")
-user_input = int(input("Enter the range of numbers to guess from: "))
+user_input = int(input("Up to what number should I set the range for you : "))
 guess(user_input)
