@@ -1,3 +1,7 @@
+"""
+This module is dedicated to represent a simple madlibs game.
+"""
+
 def greeting():
     print("Welcome to the Madlibs game!")
     print("You will be asked to enter a series of words.")
@@ -12,7 +16,7 @@ def get_words():
     return words
 
 def generate_story(words):
-    story = f"{words['name']} was a {words['adjective']} person. They loved to {words['verb']} and owned a {words['noun']}."
+    story = f"{words['name']} was a {words['adjective']} person. He loved to {words['verb']} and owned a {words['noun']}."
     return story
 
 def main():
